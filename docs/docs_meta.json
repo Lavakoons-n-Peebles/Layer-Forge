@@ -1,0 +1,114 @@
+[
+  {
+    "marker_start": "<!-- TABLE_CONFIG_START -->",
+    "marker_end": "<!-- TABLE_CONFIG_END -->",
+    "generation_mode": "hierarchical",
+    "column_widths": [
+      "15%",
+      "10%",
+      "15%",
+      "60%"
+    ],
+    "items": [
+      {
+        "param": "mode",
+        "type": "String",
+        "default": "\"full\"",
+        "desc": "Pipeline execution mode."
+      },
+      {
+        "param": "input",
+        "type": "String",
+        "default": "\"source.jpg\"",
+        "desc": "Path to the input image file."
+      },
+      {
+        "param": "output_dir",
+        "type": "String",
+        "default": "\"output_layers\"",
+        "desc": "Target directory where generated masks and previews will be saved."
+      },
+      {
+        "param": "output_format",
+        "type": "String",
+        "default": "\"stl\"",
+        "desc": "Output format for the generated model."
+      },
+      {
+        "param": "colors_count",
+        "type": "Integer",
+        "default": "4",
+        "desc": "Target number of colors for palette quantization."
+      },
+      {
+        "param": "dither",
+        "type": "Boolean",
+        "default": "false",
+        "desc": "Enables (<code>true</code>) or disables (<code>false</code>) dithering."
+      },
+      {
+        "param": "brightness",
+        "type": "Integer",
+        "default": "0",
+        "desc": "Brightness adjustment value applied before processing."
+      },
+      {
+        "param": "contrast",
+        "type": "Integer",
+        "default": "0",
+        "desc": "Contrast adjustment value applied before processing."
+      },
+      {
+        "is_group": true,
+        "param": "print_settings",
+        "type": "Print Settings (`print_settings`)",
+        "default": "",
+        "desc": "",
+        "children": [
+          {
+            "param": "width",
+            "type": "Float",
+            "default": "50",
+            "desc": "Target physical width of the model in millimeters."
+          },
+          {
+            "param": "layer_height",
+            "type": "Float",
+            "default": "0.08",
+            "desc": "Base physical height of a single print layer in millimeters."
+          },
+          {
+            "param": "base_layers",
+            "type": "Integer",
+            "default": "4",
+            "desc": "Number of solid bottom base layers."
+          },
+          {
+            "param": "color_layers",
+            "type": "Integer",
+            "default": "3",
+            "desc": "Number of layers allocated per color step."
+          },
+          {
+            "param": "print_order",
+            "type": "String",
+            "default": "\"auto_by_area\"",
+            "desc": "Layer printing sequence strategy."
+          },
+          {
+            "param": "filament_type",
+            "type": "String",
+            "default": "\"PLA\"",
+            "desc": "Type of filament used for printing."
+          },
+          {
+            "param": "filament_colors",
+            "type": "Array",
+            "default": "[\"#000000\", \"#FFFFFF\", \"#FF0000\", \"#00FF00\"]",
+            "desc": "List of hex color codes representing the filament palette."
+          }
+        ]
+      }
+    ]
+  }
+]

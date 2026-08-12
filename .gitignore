@@ -1,0 +1,23 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Generated project files (PDFs and card images)
+*.pdf
+*_front_*.png
+*_back_*.png
+
+# Local configuration (if you don't want to commit local settings)
+# config.ini
+
+# Source directories to ignore
+src/
+_src/
